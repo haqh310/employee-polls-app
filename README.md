@@ -68,3 +68,54 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## What You're Getting
+
+```bash
+├── CONTRIBUTING.md
+├── README.md - This file.
+├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
+├── package.json # npm package manager file. It's unlikely that you'll need to modify this.
+├── public
+│   ├── favicon.ico # React Icon, You may change if you wish.
+│   └── index.html # DO NOT MODIFY
+└── src
+    ├── App.css # Styles for your app. Feel free to customize this as you desire.
+    ├── App.js # This is the root of your app. Contains static HTML right now.
+    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
+    ├── index.css # Global styles. You probably won't need to change anything here.
+    │── index.js # You should not need to modify this file. It is used for DOM rendering only.
+    │── actions 
+    │   │── authedUser.js # Take all events and functions when login.
+    │   │── quesions.js # Take all events and functions of questions.
+    │   │── shared.js # Function return initial data.
+    │   └── users.js # Take all events and functions of users.
+    ├── components
+    │    │── Error404.js # Screen error 404
+    │    │── Home.js # Screen home, show list questions.
+    │    │── Leaderboard.js # Screen leaderboard, table list users, questions and sum polls.
+    │    │── Login.js # Screen login, required login when goto another screen.
+    │    │── Login.test.js # Used for testing. Provided with Create React Login. Testing is encouraged, but not required.
+    │    │── Nav.js # Global component. Use for show nav for all screen.
+    │    │── NewQuestion.js # Screen add new question.
+    │    │── NewQuestion.test.js # Used for testing. Provided with Create React NewQuestion. Testing is encouraged, but not required.
+    │    │── Poll.js # Screen show detail question. Show detail information polls.
+    │    │── Private.js # Component use for some screen. Check logined for goto another screen.
+    │    └── QuestionCard.js # Component show detail of question. Includes content two options, author, date creates of question.
+    ├── images
+    │    │── employee.jpg # Image employee, use in screen login. 
+    │    │── leaf.jpg # Avatar of employee johndoe
+    │    │── snow.jpg # Avatar of employee sarahedo
+    │    └── tyler.jpg # Avatar of employee tylermcginnis
+    ├── reducers
+    │     │── authedUser.js # Redux save data when login or logout.
+    │     │── index.js # Combine reducers of 3 redux.
+    │     │── questions.js # Redux save data of questions when have action.
+    │     └── users.js # Redux save data of users when have action.
+    └── utils
+        │── _DATA_.js # Data of users, questions and function.
+        │── api.js # Function api for _DATA.
+        │── helpers.js # Format form int to Date .
+        └── image.js # Choose correct image for user.
+```
